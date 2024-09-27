@@ -9,7 +9,7 @@ const EmpDetail = () => {
 
     useEffect(() => {
         // fetch("http://localhost:8000/employee/" + empid).then((res) => {
-        fetch("https://basherbd.github.io/employee/db.json/" + empid).then((res) => {
+        fetch("db.json/" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);

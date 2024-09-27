@@ -6,7 +6,7 @@ const EmpEdit = () => {
 
   useEffect(() => {
     // fetch("http://localhost:8000/employee/" + empid)
-    fetch("https://basherbd.github.io/employee/db.json/" + empid)
+    fetch("db.json/" + empid)
       .then((res) => {
         return res.json();
       })
@@ -36,7 +36,7 @@ const EmpEdit = () => {
     const empdata = { id, name, email, phone, active };
 
     // fetch("http://localhost:8000/employee/" + empid, {
-    fetch("https://basherbd.github.io/employee/db.json/" + empid, {
+    fetch("db.json/" + empid, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(empdata),

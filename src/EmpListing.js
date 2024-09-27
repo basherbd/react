@@ -15,7 +15,7 @@ const EmpListing = () => {
 
   const Removefunction = (id) => {
     if (window.confirm('Do you want to remove?')) {
-        fetch("http://localhost:8000/employee/" + id, {
+        fetch("employee/" + id, {
             method: "DELETE"
         }).then((res) => {
             alert('Removed successfully.')
@@ -28,7 +28,7 @@ const EmpListing = () => {
 
   useEffect(() => {
     // fetch("http://localhost:8000/employee")
-    fetch("https://basherbd.github.io/employee/db.json")
+    fetch("db.json")
       .then((res) => {
         return res.json();
       })
