@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "id": "ceed",
+      "name": "Jisan",
+      "email": "jisan@gmail.com",
+      "phone": "0236589",
+      "active": true
+    },
+    {
+      "id": "34cd",
+      "name": "Hasan",
+      "email": "hasan@gmail.com",
+      "phone": "123650",
+      "active": true
+    },
+    {
+      "id": "a6d7",
+      "name": "Abrar",
+      "email": "abrar@gmail.com",
+      "phone": "3652987",
+      "active": true
+    },
+    {
+      "id": "f785",
+      "name": "Kabir",
+      "email": "kabir@gmail.com",
+      "phone": "",
+      "active": true
+    }
+  ]
+}
