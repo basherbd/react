@@ -27,8 +27,8 @@ const EmpListing = () => {
 }
 
   useEffect(() => {
-    // fetch("http://localhost:8000/employee")
-    fetch("db.json")
+    fetch("http://localhost:8000/employee")
+    // fetch("db.json")
       .then((res) => {
         return res.json();
       })

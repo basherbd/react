@@ -5,7 +5,7 @@ const EmpEdit = () => {
   const { empid } = useParams();
 
   useEffect(() => {
-    // fetch("http://localhost:8000/employee/" + empid)
+    fetch("http://localhost:8000/employee/" + empid)
     fetch("db.json/" + empid)
       .then((res) => {
         return res.json();
@@ -35,8 +35,8 @@ const EmpEdit = () => {
     e.preventDefault();
     const empdata = { id, name, email, phone, active };
 
-    // fetch("http://localhost:8000/employee/" + empid, {
-    fetch("db.json/" + empid, {
+    fetch("http://localhost:8000/employee/" + empid, {
+    // fetch("db.json/" + empid, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(empdata),
